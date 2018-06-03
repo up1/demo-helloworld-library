@@ -1,4 +1,4 @@
-class Hi(object):
+class HelloWorld(object):
     ROBOT_LIBRARY_SCOPE = 'TEST_CASE'
 
     def __init__(self):
