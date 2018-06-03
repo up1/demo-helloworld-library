@@ -1,6 +1,4 @@
-class HelloWorld(object):
-    ROBOT_LIBRARY_SCOPE = 'TEST_CASE'
-
+class HelloWorldKeywords(object):
     def __init__(self):
         self.name = "Noname"
 
