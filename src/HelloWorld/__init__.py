@@ -1,4 +1,4 @@
-from HelloWorld import HelloWorld
+from jar import Hi
 
-class HelloWorld(HelloWorld):
+class HelloWorld(Hi):
     pass
