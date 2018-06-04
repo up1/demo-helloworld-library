@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="helloworld-library",
-    version='0.2',
+    version='0.3',
     package_dir={'' : 'src'},
     packages=['HelloWorld'],
     url='https://github.com/up1/demo-helloworld-library',
