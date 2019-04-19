@@ -39,3 +39,9 @@ $git tag 1.0 -m "Add tag for version 1.0"
 $git push origin master
 $git push —tags origin master
 ```
+
+Deploy to PyPI
+```
+$python setup.py register -r pypi
+$python setup.py sdist upload -r pypi
+```
