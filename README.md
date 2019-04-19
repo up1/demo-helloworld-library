@@ -14,7 +14,7 @@ index-servers =
   pypi
 
 [pypi]
-repository=https://pypi.python.org/pypi
+repository=https://upload.pypi.org/legacy/
 username=username
 password=password
 ```
@@ -38,7 +38,7 @@ from setuptools import setup
 
 setup(
     name="helloworld-library",  // change to your name
-    version='0.3',  // change to version as same as tag version
+    version='1.0',  // change to version as same as tag version
     package_dir={'' : 'src'},
     packages=['HelloWorld'],
     url='https://github.com/up1/demo-helloworld-library', // change to your repository
@@ -50,15 +50,23 @@ setup(
 
 Add all files and folders to git repo
 ```
+$git status
 $git add -A
 $git commit -m "Hello First Library"
 $git tag 1.0 -m "Add tag for version 1.0"
 $git push origin master
-$git push —tags origin master
+$git push origin 1.0
 ```
 
 Deploy to PyPI
 ```
-$python setup.py register -r pypi
-$python setup.py sdist upload -r pypi
+$pip install -U pip setuptools twine
+$python setup.py sdist
+$twine upload dist/*
+
+Uploading distributions to https://upload.pypi.org/legacy/
+Uploading helloworld-library-1.0.tar.gz
+100%|███████████████████████████████████████████████| 3.76k/3.76k [00:01<00:00, 3.63kB/s]
 ```
+
+See your library at [PyPi project](https://pypi.org/manage/projects/)
