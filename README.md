@@ -3,6 +3,7 @@
 ## Step 0 :: Clone your project project with [Git command](https://git-scm.com/)
 ```
 $git clone https://github.com/<username>/demo-helloworld-library.git
+$cd demo-helloworld-library
 ```
 
 ## Step 1 :: create file `~/.pypirc`
@@ -30,6 +31,22 @@ List of files
 * LICENSE.txt
 * setup.cfg
 * setup.py
+
+Edit file `setup.py`
+```
+from setuptools import setup
+
+setup(
+    name="helloworld-library",  // change to your name
+    version='0.3',  // change to version as same as tag version
+    package_dir={'' : 'src'},
+    packages=['HelloWorld'],
+    url='https://github.com/up1/demo-helloworld-library', // change to your repository
+    author='your name', 
+    author_email='your email',
+)
+
+```
 
 Add all files and folders to git repo
 ```
