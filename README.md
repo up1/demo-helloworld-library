@@ -1,4 +1,4 @@
-# demo-helloworld-library
+# How to publish your library to PyPi ?
 
 ## Step 0 :: Clone your project project with [Git command](https://git-scm.com/)
 ```
@@ -18,6 +18,8 @@ repository=https://upload.pypi.org/legacy/
 username=username
 password=password
 ```
+
+Register your account at [PyPi](https://pypi.org/)
 
 And change permission
 
