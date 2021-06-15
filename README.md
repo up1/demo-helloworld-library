@@ -9,6 +9,10 @@ $cd demo-helloworld-library
 ## Step 1 :: create file `~/.pypirc`
 
 ```
+$touch ~/.pypirc
+```
+
+```
 [distutils]
 index-servers =
   pypi
